@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Shop - Slize</title>
+    <script defer src="shopkeeper.js"></script>
+</head>
+<body>
+    <h2>Add Your Shop</h2>
+    <form id="shop-form" enctype="multipart/form-data">
+        <label>Shop Name:</label>
+        <input type="text" id="shop-name" required>
+    
+        <label>Category:</label>
+        <select id="category">
+            <option value="Food">Food</option>
+            <option value="Spa">Spa</option>
+            <option value="Cafe">Cafe</option>
+        </select>
+    
+        <label>Upload Image:</label>
+        <input type="file" id="shop-image" accept="image/*" required>
+    
+        <label>Signature Dish:</label>
+        <input type="text" id="signature-dish" required>
+    
+        <label>Menu Items (comma-separated):</label>
+        <input type="text" id="menu-items" required>
+    
+        <button type="submit">Add Shop</button>
+    </form>
+    
+</body>
+</html>

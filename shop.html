@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Details</title>
+    <link rel="stylesheet" href="shop-style.css">
+    <script defer src="shop.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="shop-title">Shop Name</h1>
+        <a href="index.html" class="back-button"><span>←</span></a>
+    </header>
+
+    <main>
+        <div class="shop-container">
+            <img id="shop-image" src="" alt="Shop Image" class="shop-image">
+            <div class="shop-details">
+                <h2>About <span id="shop-name"></span></h2>
+                <p id="shop-description">Loading...</p>
+                <p><strong>Signature Dish:</strong> <span id="signature-dish"></span></p>
+                <p><strong>Rating:</strong> <span id="shop-rating"></span></p>
+                <p><strong>Contact:</strong> 📞 <span id="shop-contact">N/A</span></p>
+                <p><strong>Landline:</strong> ☎️ <span id="shop-landline">N/A</span></p>
+            </div>
+        </div>
+
+        <section class="menu">
+            <h2>Our Menu</h2>
+            <ul id="menu-list"></ul>
+        </section>  
+
+        <div class="reservation-container">
+            <a href="reservation.html" class="glow-button">Reserve a Table</a>
+        </div> 
+    </main>
+</body>
+</html>

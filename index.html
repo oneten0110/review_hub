@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slize</title>
+    <link rel="stylesheet" href="yelp.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+
+</head>
+<body>
+    <!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" required>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+    <header>
+        <img src="images/logo.png" alt="Slize Logo" id="logo">
+        <h1 id="site-title">Slize</h1>
+        <p id="description">Your go-to site for discovering great places to eat!</p>
+    
+        <!-- Login & Sign In Buttons -->
+        <div class="auth-buttons">
+            <button id="login-btn" class="glow-button">Login</button>
+            <button id="signup-btn" class="glow-button">Sign In</button>
+        </div>
+    
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search...">
+    </header>
+    
+    
+    
+    <main>
+        <aside>
+            <div id="category-buttons">
+                <button onclick="renderBusinesses('All')">All</button>
+                <button onclick="renderBusinesses('Food')">Food</button>
+                <button onclick="renderBusinesses('Spa')">Spa</button>
+                <button onclick="renderBusinesses('Cafe')">Cafe</button>
+            </div>
+        </aside>
+        <div id="business-list"></div>
+    </main>
+   <!-- Shopkeeper Button at Bottom Left -->
+<button id="shopkeeper-btn">Shopkeeper Panel</button>
+
+    
+    <script src="yelp.js"></script>
+</body>
+</html>
+
